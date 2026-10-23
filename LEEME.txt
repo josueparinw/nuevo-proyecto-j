@@ -1,0 +1,33 @@
+CARTA CINEMATOGRÁFICA CON MÚSICA ❤️
+
+ARCHIVOS
+- index.html: estructura de la web
+- style.css: diseño, estilo cinematográfico y animaciones
+- script.js: carrusel, música y pregunta final
+- media/: aquí debes colocar tus propios archivos
+
+ARCHIVOS QUE DEBES AÑADIR A LA CARPETA media/
+- cancion.mp3       Tu canción de fondo
+- video-fondo.mp4   Vídeo de vosotros (opcional)
+- foto-1.jpg        Primera foto del carrusel
+- foto-2.jpg        Segunda foto del carrusel
+- foto-3.jpg        Tercera foto del carrusel
+- foto-portada.jpg  Imagen opcional mientras carga el vídeo
+
+MÚSICA
+La web intenta reproducir cancion.mp3 al abrir la carta. Algunos navegadores bloquean la reproducción automática; por eso también hay un botón para iniciar/pausar la música y un control de volumen. No se incluye ninguna canción comercial en el ZIP: añade un archivo de audio que tengas derecho a usar.
+
+CÓMO PROBARLA
+1. Descomprime el ZIP.
+2. Coloca los archivos de fotos, vídeo y canción dentro de media con los nombres exactos.
+3. Abre index.html en el navegador.
+4. Pulsa “Abrir mi carta”. Si la canción no empieza, pulsa “Reproducir nuestra canción”.
+
+PERSONALIZACIÓN
+- Cambia los pies de foto en script.js.
+- Cambia el texto de la carta en index.html.
+- Para cambiar la canción, reemplaza media/cancion.mp3 por tu archivo y conserva ese nombre.
+- Puedes quitar el vídeo si no lo quieres; el fondo oscuro seguirá apareciendo.
+
+CONSEJO
+Para compartir la página con ella por un enlace, publícala en un servicio de alojamiento web estático, por ejemplo GitHub Pages, Netlify o Vercel. Recuerda subir también la carpeta media.

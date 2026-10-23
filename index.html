@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#160d1b">
+  <title>Para ti mi Guanabanis ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <audio id="backgroundMusic" loop preload="auto">
+    <source src="media/cancion.mp3" type="audio/mpeg">
+    Tu navegador no admite audio HTML5.
+  </audio>
+
+  <div class="intro" id="intro">
+    <div class="grain"></div>
+    <p class="eyebrow">NUESTRA HISTORIA MERECE OTRA OPORTUNIDAD</p>
+    <h1>Para ti Janis,<br><em>con todo mi corazón bobo.</em></h1>
+    <p class="intro-note" style="font-style: italic;">Si, se lo que piensas, desde cuando el hace esto, pero bueno, te escribi esta CARTA.</p>
+    <button class="envelope-button" id="openLetter" aria-label="Abrir la carta">
+      <span class="envelope">
+        <span class="envelope-flap"></span>
+        <span class="letter-icon">♥</span>
+      </span>
+      <span class="open-label">Abrir mi carta</span>
+    </button>
+    <p class="tiny-note">Recomendación: ponte cómoda y escucha la canción, Pista "Es de Camila" 🎵</p>
+  </div>
+
+  <main id="mainContent" class="hidden">
+    <section class="hero" id="inicio">
+      <video class="hero-video" autoplay muted loop playsinline poster="media/foto-portada.jpg">
+        <source src="media/video-fondo.mp4" type="video/mp4">
+      </video>
+      <div class="hero-shade"></div>
+      <div class="hero-content cinematic-in">
+        <p class="eyebrow">TÚ Y YO · NUESTRO SEGUNDO CAPÍTULO</p>
+        <h1>Aunque pase el tiempo,<br><em style="font-size:xxx-large;">mi corazón siempre te eligió a ti.</em></h1>
+        <p class="hero-subtitle">No puedo cambiar el pasado, pero sí puedo aprender de él y cuidar mejor lo que tenemos hoy.</p>
+        <a class="scroll-link" href="#recuerdos">Nuestros recuerdos <span>↓</span></a>
+      </div>
+      <div class="music-control">
+        <button id="musicButton" class="music-button" aria-pressed="false">
+          <span id="musicIcon">♫</span> <span id="musicLabel">Reproducir nuestra canció</span>
+        </button>
+        <label class="volume-control" for="musicVolume">Volumen</label>
+        <input id="musicVolume" type="range" min="0" max="1" step="0.05" value="0.35" aria-label="Volumen de la música">
+      </div>
+      <p class="sound-tip">La música empieza cuando abras la carta, Si no se escucha presiona el boton de reproducir xd.</p>
+    </section>
+
+    <section class="section memories" id="recuerdos">
+      <p class="eyebrow">LO QUE GUARDO DE NOSOTROS</p>
+      <h2>Momentos que vuelven<br><em>a hacerme sonreír.</em></h2>
+      <p class="section-intro">Cada foto guarda una parte de nuestra pequeña historia, y espero tener mas</p>
+      <div class="carousel">
+        <button class="carousel-arrow" id="prevPhoto" aria-label="Foto anterior">‹</button>
+        <div class="photo-frame">
+          <img id="carouselImage" src="media/foto-1.jpg" alt="Un recuerdo de nosotros">
+          <div class="photo-caption" id="photoCaption">Un momento que siempre guardaré ❤️</div>
+        </div>
+        <button class="carousel-arrow" id="nextPhoto" aria-label="Foto siguiente">›</button>
+      </div>
+      <div class="dots" id="carouselDots"></div>
+    </section>
+
+    <section class="section letter-section" id="carta">
+      <article class="letter-card">
+        <span class="heart-stamp">♥</span>
+        <p class="eyebrow">Mi primera carta</p>
+        <h2>Mi Guanabanis,</h2>
+        <div class="letter-copy">
+          <p>No sé si alguna vez encontraré las palabras exactas para explicarte todo lo que siento por ti, pero hoy quiero intentarlo. Nunca antes te había escrito una carta así, y creo que mereces saber todo aquello que a veces me cuesta expresar con palabras.</p>
+          <p>Te amo. Y si algo tengo claro, es que, incluso después de todo lo que vivimos, mi corazón nunca dejó de elegirte a ti.</p>
+          <p>Sé que hubo errores, heridas y cosas que nos hicieron daño. No quiero volver al pasado ni quedarme buscando culpables. Los dos vivimos cosas que nos dolieron, pero hoy no quiero que eso siga definiendo nuestra historia. Quiero aprender de lo que pasó y que, si vamos a intentarlo de nuevo, sea para construir algo mucho más bonito.</p>
+          <p>No voy a mentirte: me hace feliz saber que me has dado esta oportunidad. Porque después de tanto luchar por volver a acercarme a ti, tener la posibilidad de compartir de nuevo momentos contigo significa muchísimo para mí. Sé que las cosas no volverán a ser como antes, y tampoco quiero que simplemente vuelvan a serlo. Quiero que podamos construir algo nuevo, con más comprensión, más confianza y más amor.</p>
+          <p>Sé que no puedo pedirte que vuelvas a sentir lo mismo que sentías antes, ni esperar que las heridas desaparezcan de un día para otro. No quiero presionarte, ni correr, ni hacerte sentir que tienes que darme algo para demostrarme que también quieres intentarlo. Quiero respetar tus tiempos, tu tranquilidad y tu manera de vivir esta nueva etapa.</p>
+          <p>Pero sí quiero que sepas algo: voy a dar lo mejor de mí por nosotros. No para convencerte con promesas, sino para que puedas ver con el tiempo que mis sentimientos son reales. Quiero aprender a cuidarte mejor, escucharte, comprenderte y demostrarte que puedes contar conmigo. Quiero que mis acciones hablen por mí, incluso en los días en los que no encuentre las palabras adecuadas.</p>
+          <p>No espero que olvidemos nuestra historia. Quiero que podamos mirarla algún día sin que nos duela tanto, sabiendo que aprendimos de ella y que decidimos intentarlo de una manera diferente.</p>
+          <p>Y si algún día vuelves a enamorarte de mí, quiero que sea porque te sientes feliz a mi lado, porque te sientes querida, comprendida y libre de ser tú misma. Quiero volver a ganarme tu confianza, tus sonrisas, tus abrazos y esa complicidad tan nuestra, sin exigirle nada al tiempo.</p>
+          <p>No sé cómo será nuestro camino a partir de ahora, pero sé lo que quiero aportar a él: amor, paciencia, sinceridad y ganas de hacerlo bien.</p>
+          <p>Gracias por abrirme esta puerta. Gracias por permitirme intentarlo contigo una vez más. No voy a dar por hecho esta oportunidad, porque sé lo valiosa que es para mí.</p>
+          <p>Te amo, y esta vez quiero que puedas sentirlo también en la manera en que te trato, te escucho y te cuido.</p>
+          <p>No tenemos que escribir toda nuestra historia hoy. Podemos hacerlo poquito a poquito, a nuestro ritmo, sin prisas y sin presiones.</p>
+          <p>Solo quiero que, cuando mires a tu lado, puedas encontrar en mí a alguien que no solo dice que te ama, sino que cada día intenta demostrártelo.</p>
+          <p>Si la vida nos está permitiendo escribir un nuevo capítulo, quiero hacerlo contigo. Con calma, con el corazón abierto y con todas las ganas de cuidar lo que estamos volviendo a construir.</p>
+        </div>
+        <p class="signature">Con todo mi amor,<br><span>alguien que quiere hacerlo mejor. ❤️</span></p>
+      </article>
+    </section>
+
+    <section class="final-section" id="final">
+      <div class="final-glow"></div>
+      <div class="floating-hearts" id="floatingHearts" aria-hidden="true"></div>
+      <div class="final-letter" id="finalLetter">
+        <div class="final-letter-inner">
+          <span class="final-heart">♥</span>
+          <p class="eyebrow">ANTES DE TERMINAR...</p>
+          <p class="final-note">Se que querias que te proponga con algo mucho mas bonito, te prometo que cuando tenga dinero, te hare algo increible, por ahora solo puedo hacer esto :c</p>
+          <h2>Te elegiría mil veces,<br><em>pero esta vez quiero amarte mejor. ❤️</em></h2>
+          <div class="final-divider"><span>✦</span></div>
+          <p class="final-question">¿Quieres volver a intentarlo conmigo?</p>
+          <p class="final-copy">¿Me permites volver a enamorarte? ❤️
+
+Esta vez quiero conquistarte poquito a poquito, cuidarte mejor y demostrarte con hechos todo lo que siento por ti. Sin prisas, sin presiones, disfrutando cada momento y construyendo algo bonito juntos.
+
+No quiero que volvamos a ser los de antes, quiero que creemos una historia nueva, donde podamos volver a elegirnos cada día.</p>
+          <button id="revealQuestion" class="reveal-button">Abrir la última carta ♥</button>
+          <div id="finalChoices" class="final-choices hidden">
+            <button class="yes-button" id="yesButton">Sí, quiero intentarlo ❤️</button>
+            <button class="talk-button" id="talkButton">Quiero hablarlo contigo</button>
+          </div>
+          <p class="answer-message" id="answerMessage" role="status" aria-live="polite"></p>
+        </div>
+      </div>
+      <p class="footer-note">Hecho con cariño, pensando en ti janis, esta pagina es completamente tuya, todo esto lo pude hacer por que me apoyaste en todo, hasta para ir a estudiar, te quiero.</p>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
